@@ -31,10 +31,10 @@
 
 @media (max-width: 800px) {
   :root {
-    --fs-h1: 3rem;
-    --fs-h2: 2.5rem;
-    --fs-h3: 1rem;
-    --fs-body: 0.8rem;
+    --fs-h1: 2.5rem;
+    --fs-h2: 2rem;
+    --fs-h3: 0.8rem;
+    --fs-body: 0.7rem;
   }
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 section {
-  padding: 4em 2em;
+  padding: 2em 2em;
 }
 
 img {
@@ -209,6 +209,12 @@ header {
   color: var(--clr-accent);
 }
 
+@media (max-width: 800px) {
+  .nav__list {
+    padding-left: 0;
+  }
+}
+
 /* Intro Section */
 
 .intro {
@@ -271,35 +277,6 @@ header {
     width: 100%;
   }
 }
-/* @media (max-width: 600px) {
-  .intro {
-    display: grid;
-    width: min-content;
-    margin: 0 auto;
-    grid-column-gap: 1em;
-    grid-template-areas:
-      "img title"
-      "img subtitle";
-    grid-template-columns: min-content max-content;
-  }
-
-  .intro__img {
-    grid-area: img;
-    min-width: 250px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .section__subtitle--intro {
-    align-self: start;
-    grid-column: -1 / 1;
-    grid-row: 2;
-    text-align: right;
-    position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
-  }
-} */
 
 /* My services section */
 
@@ -485,6 +462,10 @@ header {
     position: relative;
     z-index: 2;
   }
+
+  .about-me__accordion__button {
+    font-size: var(--fs-h3);
+  }
 }
 
 /* My Work */
@@ -601,6 +582,12 @@ header {
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   /* opacity: 0.75; */
+}
+
+@media (max-width: 800px) {
+  .accordion__button {
+    font-size: --var(fs-h3);
+  }
 }
 
 /* The Modal (background) */
