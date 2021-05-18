@@ -491,6 +491,7 @@ header {
 
 .accordion__button--active {
   background: var(--clr-light);
+  color: var(--clr-accent);
 }
 .accordion__button--active::after {
   content: "\25b4";
